@@ -1,3 +1,17 @@
+html, body, #everything {
+    width: 100%;
+    height: 100%;
+}
+
+#everything {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -moz-transform-origin: left top;
+    transform-origin: left top;
+}
+
 #menu-toggle {
     z-index: 1;
     position: fixed;
@@ -16,6 +30,13 @@
     background-color: rgba(14, 37, 241, 0.4);
 }
 
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -24,13 +45,24 @@
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: #222;
+    background: rgba(235, 53, 98, 0.76);
     transition: all 0.4s ease 0s;
     -webkit-transition: all 0.4s ease 0x;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
 }
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
 
 .sidebar-nav {
     position: absolute;
@@ -47,6 +79,15 @@
     line-height: 55px;
 }
 
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 30px;
@@ -55,12 +96,72 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
 }
 
 .btn-light {
     border-radius: 0;
     color: #333;
     background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+ul.droplist {
+    list-style: none;
+    padding-left: 10px;
+}
+
+#liButton, #gitButton {
+    color: black;
+    display: inline-block;
+    padding: 6px 6px;
+    text-indent: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(./images/background.jpg) no-repeat center center scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-left: 25px;
+    color: #fff;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
 }
 

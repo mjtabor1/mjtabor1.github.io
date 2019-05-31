@@ -4,157 +4,73 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- BOOTSTRAP 3.3.7 compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- CUSTOM CSS -->
 	<link href="style.css" rel="stylesheet">
-	<link href="bootstrap.min.css" rel="stylesheet">
+	
 	<title>Michael Tabor</title>
 	</head>
+
 	<body>
-		<!-- Main navigation -->
-		<header>
-			<!--Navbar-->
-			<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-				<div class="container">
-					<a class="navbar-brand" href="#home">
-						<strong>MJT</strong>
+		<div id="everything">
+
+			<!-- NAVIGATION SIDEBAR -->
+			<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</a>
+			<nav id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+						<span class="glyphicon glyphicon-remove"></span>
 					</a>
-					<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
-						<span class="glyphicon glyphicon-menu-hamburger"></span></a>
-					<nav id="sidebar-wrapper">
-						<ul class="sidebar-nav">
-							<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
-								<span class="glyphicon glyphicon-remove"></span>
-							</a>
-							<li class="sidebar-brand">
-								<a href="../" onclick=$("#menu-close").click();>Home</a>
-							</li>
-							<li>
-								<a href="portfolio.html" onclick="$('#menu-close').click();">Portfolio</a>
-							</li>
-							<!--First menu drop down-->
-							<li id="portItem">
-								<a href="#">
-									"Mini Projects"
-									<span id="portCaret" class="glyphicon glyphicon-chevron-right">
-
-									</span>
-								</a>
-							</li>
+					<li class="sidebar-brand">
+						<a href="index.html" onclick='$("#menu-close").click();'>Home</a>
+					</li>
+					<li>
+						<a href="portfolio.html" onclick='$("#menu-close").click();'>Portfolio</a>
+					</li>
+					<!--First menu drop down-->
+					<li id="portItem">
+						<a href="#">Mini Projects<span id="portCaret" class="glyphicon glyphicon-chevron-right"></span></a>
+						<ul class="dropList">
+							<!-- Mini Projects go here -->
 						</ul>
-					</nav>
-					<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button> 
-					<div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Home
-									<span class="sr-only">(current)</span>
-								</a>
-							</li>
-						</ul>
-						<form class="form-inline">
-							<div class="md-form my-0">
-								<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-							</div>
-						</form>
-					</div> -->
-				</div>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/michael-tabor/" target="_blank" id="liButton" class="btn btn-info liContact" onClick='$("#menu-close").click();'>LinkedIn Profile! &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+					</li>
+					<li id="liContact">
+						<a href="https://github.com/mjtabor1" target="_blank" id="gitButton" class="btn btn-info liContact" onClick='$("#menu-close").click();'>GitHub Account! &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+					</li>
+				</ul>
 			</nav>
-			<!-- Full Page Intro -->
-			<div class="view" style="background-image: url('images/background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-				<!-- Mask & flexbox options-->
-				<div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-					<!-- Content -->
-					<div class="container">
-						<!--Grid row-->
-						<div class="row">
-							<!--Grid column-->
-							<div class="col-md-9 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-								<br><br><br><br>
-								<h1 class="h1-responsive font-weight-bold mt-sm-5 text-white">Michael Tabor</h1>
-								<h3 class="text-white">Software Engineer</h3><br>
-								<p class="lead">
-									<a href="#development" class="btn btn-dark btn-lg">Development Skills</a>
-									<a href="#humanskills" class="btn btn-dark btn-lg">Human Skills</a>
-									<a href="#experience" class="btn btn-dark btn-lg">Professional Skills</a>
-								</p>
-								<p class="lead">
-									<a href="https://www.linkedin.com/in/michael-tabor/" target="blank" class="btn btn-dark btn-lg">LinkedIn</a>
-									<a href="https://github.com/mjtabor1" target="blank" class="btn btn-dark btn-lg">GitHub</a>
-								</p><br><br><br><br><br><br>
-							</div>
-							<!--Grid column-->
-							<!--Grid column-->
-							
-							<!--Grid column-->
-						</div>
-						<!--Grid row-->
-					</div>
-					<!-- Content -->
+			
+			
+			<header id="top" class="header">
+				<div class="text-vertical-center">
+					<h1>Michael Tabor</h1>
+					<h3>Software Engineer</h3>
+					<p>
+						<a href="#Development" class="btn btn-dark btn-lg">Development Skills</a>
+						<a href="#HumanSkills" class="btn btn-dark btn-lg">Human Skills</a>
+						<a href="#Experience" class="btn btn-dark btn-lg">Professional Skills</a>
+					</p>
+					<p>
+						<a href="https://www.linkedin.com/in/michael-tabor/" target="_blank" class="btn btn-dark btn-lg">LinkedIn <span class="glyphicon glyphicon-new-window"></span></a>
+						<a href="https://github.com/mjtabor1" target="_blank" class="btn btn-dark btn-lg">GitHub <span class="glyphicon glyphicon-new-window"></span></a>
+					</p>
+		
 				</div>
-				<!-- Mask & flexbox options-->
-			</div>
-			<!-- Full Page Intro -->
-		</header>
-		<!-- Main navigation -->
-		<!--Main Layout-->
-		<main>
-			<div class="container">
-			<!--Grid row-->
-			<div class="row py-5">
-				<!--Grid column-->
-				<div class="col-md-12 text-center">
-				<p></p>
-				</div>
-				<!--Grid column-->
-			</div>
-			<!--Grid row-->
-			</div>
-		</main>
-		<!--Main Layout-->
-
-
-
-
-
-
-
-		<!-- Navigation Section --> <!-- 
-		<section id="main-slider" class="">
-			<div class="carousel slide">
-				<div class="carousel-inner">
-					<div class="item active" style="background-image: url(images/background.jpg)">
-						<div class="container-fluid">
-							<div class="slide-margin"></div>
-								<div class="col-sm-10">
-									<div class="text-vertical-center text-primary">
-										<h1>Michael Tabor</h1>
-										<h3>Software Engineer</h3>
-										<p class="lead">
-											<a href="#development" class="btn btn-dark btn-lg">Development Skills</a>
-											<a href="#humanskills" class="btn btn-dark btn-lg">Human Skills</a>
-											<a href="#experience" class="btn btn-dark btn-lg">Professional Skills</a>
-										</p>
-										<p class="lead">
-											<a href="https://www.linkedin.com/in/michael-tabor/" target="blank" class="btn btn-dark btn-lg">LinkedIn</a>
-											<a href="https://github.com/mjtabor1" target="blank" class="btn btn-dark btn-lg">GitHub</a>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-		<!-- End Navigation Section --> 
-
+			</header>
+			
+		
+		
+		</div>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="mtscript.js"></script>
 	</body>
 </html>
