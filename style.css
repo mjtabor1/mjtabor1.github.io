@@ -165,3 +165,45 @@ ul.droplist {
     font-weight: 700;
 }
 
+.blueBG {
+    background: rgb(15, 12, 7);
+}
+
+hr.small {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.devSkills {
+    text-align: center;
+    color: #75d2de;
+}
+
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.languageItem {
+    max-height: 200px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: #333;
+    color: #eee;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+}
