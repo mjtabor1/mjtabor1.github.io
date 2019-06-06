@@ -6,22 +6,50 @@
 	<title>Michael Tabor | Portfolio</title>
 	
 	<!-- Bootstrap and Font Awesome css-->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<!-- Google fonts - Open Sans-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
+	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
+	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Google fonts - Open Sans
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic"> -->
 	<!-- theme stylesheet-->
-	<link rel="stylesheet" href="./css/style_portfolio.css" id="theme-stylesheet">
-	<!-- Custom stylesheet - for your changes-->
+	<link rel="stylesheet" href="./css/style_portfolio.css" id="theme-stylesheet"> 
+	<!-- Custom stylesheet -->
 	<link rel="stylesheet" href="./css/custom_portfolio.css" rel="stylesheet">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="favicon.png">
+	<link href="./css/style.css" rel="stylesheet">
+
 	</head>
 	<body>
+		<!-- NAVIGATION SIDEBAR -->
+		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+		</a>
+		<nav id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+					<span class="glyphicon glyphicon-remove"></span>
+				</a>
+				<li class="sidebar-brand">
+					<a href="index.html" onclick='$("#menu-close").click();'>Home</a>
+				</li>
+				<li>
+					<a href="portfolio.html" onclick='$("#menu-close").click();'>Portfolio</a>
+				</li>
+				<li>
+					<a href="#" onclick='$("#menu-close").click();'>Resume</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/michael-tabor/" target="_blank" id="liButton" class="btn btn-info liContact" onClick='$("#menu-close").click();'>LinkedIn Profile! &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+				</li>
+				<li id="liContact">
+					<a href="https://github.com/mjtabor1" target="_blank" id="gitButton" class="btn btn-info liContact" onClick='$("#menu-close").click();'>GitHub Account! &nbsp;<span class="glyphicon glyphicon-new-window"></span></a>
+				</li>
+			</ul>
+		</nav>
+
 		<section id="intro" class="text-intro no-padding-bottom">
 			<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-lg-10">
+				<div class="col-md-10 col-lg-10">
 				<h1>Hello.<br />I'm <span class="text-primary">Michael Tabor</span>, an aspiring <span class="text-primary">Software Engineer</span> living in Denver</h1>
 				</div>
 			</div>
@@ -38,7 +66,7 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row no-space">
-					<div class="col-sm-4 col-md-3">
+					<div class="col-sm-4 col-md-3 devSkills">
 						<h4>Tic-Tac-Toe Game</h4>
 						<div class="box"><img src="./demos/TicTacToe/images/tic_tac_toe.gif" alt="" class="img-responsive"></a></div>
 							<a href="./demos/TicTacToe/TicTacToe.html" target="_blank" role="button" class="btn btn-warning">Click to play!</a>
@@ -62,11 +90,18 @@
 					</div>
 					<div class="col-sm-12">
 						<div class="row">
-							<div class="col-sm-6 text-left">
-								<p>About me paragraph</p>
-								<p><img src="img/about.jpg" alt="This is me" class="image img-circle img-responsive"></p>
+							<div class="col-sm-4 text-left">
+								<p><img src="./images/Profile.jpg" alt="This is me" class="image img-circle img-responsive"></p>
 							</div>
-							
+							<div class="col-sm-8 text-left">
+								<p id="aboutMe" class="">One of the first programs 
+									I wrote was a game that asked two users for a number and compared those numbers to a random number
+									generator. Whoever guessed closest to the random number was the winner. Simple, I know but ever since then
+									I've been hooked. It was very surreal to me that I could type in some code on a screen and create a usable,
+									working program that another human being could use. I hope to one day be a master at my craft and develop 
+									something that will help change the world for the better.
+								</p>
+							</div>
 						</div>
 					</div>
 					<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 mt-big"></div>
@@ -94,22 +129,19 @@
 		</div> -->
 		
 		<!-- Javascript files-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
-		<script src="js/jquery.cookie.js"> </script>
-		<script src="js/ekko-lightbox.js"></script>
-		<script src="js/front.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="mtscript.js"></script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
 		<!---->
-		<script>
+		<!--<script>
 			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
 			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
 			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
 			e.src='//www.google-analytics.com/analytics.js';
 			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 			ga('create','UA-XXXXX-X');ga('send','pageview');
-		</script>
+		</script> -->
 	</body>
 </html>
