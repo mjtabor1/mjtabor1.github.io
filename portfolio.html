@@ -6,16 +6,16 @@
 	<title>Michael Tabor | Portfolio</title>
 	
 	<!-- Bootstrap and Font Awesome css-->
-	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
-	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Google fonts - Open Sans
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic"> -->
 	<!-- theme stylesheet-->
-	<link rel="stylesheet" href="./css/style_portfolio.css" id="theme-stylesheet"> 
+	<link rel="stylesheet" href="css/style_portfolio.css" rel="stylesheet" id="theme-stylesheet"> 
 	<!-- Custom stylesheet -->
-	<link rel="stylesheet" href="./css/custom_portfolio.css" rel="stylesheet">
-	<link href="./css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/custom_portfolio.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"> 
 
 	</head>
 	<body>
@@ -46,6 +46,7 @@
 			</ul>
 		</nav>
 
+		<!-- Home page section -->
 		<section id="intro" class="text-intro no-padding-bottom">
 			<div class="container">
 			<div class="row">
@@ -55,7 +56,8 @@
 			</div>
 			</div>
 		</section>
-		<!-- portfolio-->
+
+		<!-- Portfolio section -->
 		<section id="portfolio" class="no-padding-bottom"> 
 			<div class="container">
 				<div class="row">
@@ -66,16 +68,20 @@
 			</div>
 			<div class="container-fluid">
 				<div class="row no-space">
-					<div class="col-sm-4 col-md-3 devSkills">
-						<h4>Tic-Tac-Toe Game</h4>
-						<div class="box"><img src="./demos/TicTacToe/images/tic_tac_toe.gif" alt="" class="img-responsive"></a></div>
-							<a href="./demos/TicTacToe/TicTacToe.html" target="_blank" role="button" class="btn btn-warning">Click to play!</a>
+					<div class="col-sm-4 col-md-3">
+						<div class="box"><a href="images/Portfolio/tic_tac_toe.jpg" data-toggle="lightbox" data-gallery="Portfolio" data-title="Tic-Tac-Toe Game" data-footer="Description"><img src="images/Portfolio/tic_tac_toe.jpg" alt="" class="img-responsive"></a></div>
+						<a href="./demos/TicTacToe/TicTacToe.html" target="_blank" role="button" class="btn btn-warning">Click to play!</a>
 					</div>
 					<div class="col-sm-4 col-md-3">
-						<div class="box"><a href="img/portfolio/business-card-26.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Name of the work 2" data-footer="Fifth abundantly made Give sixth hath. Cattle creature i be don't them."><img src="img/portfolio/business-card-26.jpg" alt="" class="img-responsive"></a></div>
+						<div class="box"><a href="images/Portfolio/HotelProducts.jpg" data-toggle="lightbox" data-gallery="Portfolio" data-title="Hotel Website" data-footer="Description"><img src="images/Portfolio/HotelProducts.jpg" alt="" class="img-responsive"></a></div>
+						<a href="https://github.com/mjtabor1/TTA-Python-Projects/tree/master/TTAdjangoProject" target="_blank" role="button" class="btn btn-warning">Click to view code.</a>
 					</div>
 					<div class="col-sm-4 col-md-3">
-						
+						<div class="box"><a href="images/Portfolio/alien.JPG" title="" data-toggle="lightbox" data-gallery="Portfolio" data-title="Name of the work 3" data-footer="Description"><img src="images/Portfolio/alien.JPG" alt="" class="img-responsive"></a></div>
+						<a href="https://github.com/mjtabor1/Personal-Python-Projects/tree/master/alien_invasionGame" target="_blank" role="button" class="btn btn-warning">Click to view code.</a>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="box"><a href="" title="" data-toggle="lightbox" data-gallery="Portfolio" data-title="Name of the work 3" data-footer="Description"><img src="" alt="" class="img-responsive"></a></div>
 					</div>
 					
 				</div>
@@ -109,29 +115,13 @@
 			</div>
 		</section>
 		
-		<!-- map-->
-		<!-- <div id="map"></div>
-		<button type="button" data-toggle="collapse" data-target="#style-switch" id="style-switch-button" class="btn btn-primary btn-sm hidden-xs hidden-sm"><i class="fa fa-cog fa-2x"></i></button>
-		<div id="style-switch" class="collapse">
-			<h4 class="text-uppercase">Select theme colour</h4>
-			<form class="margin-bottom">
-			<select name="colour" id="colour" class="form-control">
-				<option value="">select colour variant</option>
-				<option value="default">blue</option>
-				<option value="pink">pink</option>
-				<option value="green">green</option>
-				<option value="violet">violet</option>
-				<option value="sea">sea</option>
-				<option value="red">red</option>
-			</select>
-			</form>
-			<p><img src="img/template-mac.png" alt="" class="img-responsive"></p>
-		</div> -->
 		
 		<!-- Javascript files-->
-		<script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
+		<script src="lightbox.js"></script>
 		<script src="mtscript.js"></script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
 		<!---->
