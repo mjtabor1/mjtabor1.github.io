@@ -28,7 +28,41 @@ section {
     float: left;
     width: 300px;
     height: 275px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,.7);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+    
+}
+
+.title {
+    color: #fff;
 }

@@ -30,6 +30,13 @@ html, body, #everything {
     background-color: rgba(14, 37, 241, 0.4);
 }
 
+.btn-dark-port {
+    margin: 5px 5px 5px 1px;
+    border-radius: 0;
+    color: #fff;
+    background-color: #2b7551;
+}
+
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
